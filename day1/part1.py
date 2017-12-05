@@ -1,12 +1,8 @@
 def solve(inp):
 	sum = 0
-	
-	for idx, val in enumerate(inp[:-1]):
-		if (val == inp[idx+1]):
+	for idx, val in enumerate(inp):
+		if (val == inp[int((idx+1) % len(inp))]):
 			sum = sum + int(val)
-	if (inp[0] == inp[-1]):
-		sum = sum + int(inp[-1])
-	
 	return sum
 
 def main():

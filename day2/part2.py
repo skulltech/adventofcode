@@ -9,7 +9,7 @@ def solve(inp):
 	return sum
 
 def main():
-	with open('part1-input.txt', 'r') as f:
+	with open('input.txt', 'r') as f:
 		inp = f.read()
 		print('[*] Reading input from part1-input.txt...')
 	print('[*] The solution is: ')
